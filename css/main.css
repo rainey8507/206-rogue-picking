@@ -1,0 +1,242 @@
+/*@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}*/
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
+}
+
+.container{
+	
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.3125;
+    padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	
+	/*border-bottom: 3px solid #77a466;*/
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+header h1 {
+	/*float: left;*/
+	margin: 0;
+	padding: 2.375em 0;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	list-style: none;
+	/*padding: 0 .625em;
+	/*display: inline;*/
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+
+/*The widths are in a percentage!*/
+.top-section {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	flex-flow: row wrap;
+}
+.top-section h2 {
+	color: #77a466;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+.title p {
+	font-family: myriad-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.6em;
+}
+.bottom-section {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	flex-flow: row wrap;
+}
+.bottom-section h3 {
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+.section-one ul li {
+	list-style: none;
+}
+.section-one ul li a {
+	text-decoration: none;
+	color: #77a466;
+	line-height: 1.8em;
+}
+.section-one ul li a:hover{color: #1e490e;}
+
+.section-one ul li a:visited {color: #77a466;}
+
+.section-two p,
+.section-three p {
+	font-family: myriad-pro, sans-serif;
+	line-height: 1.6em;
+	font-weight: 400;
+	font-style: normal;
+}
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer h4 {text-transform: uppercase;}
+footer h4 span {
+	text-transform: lowercase; 
+	color: #77a466;
+	font-family: 'Dancing Script', cursive;
+}
+@media all and (min-width:768px) {
+	/* Tablet styles here */
+	.bottom-section {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		align-items: center;
+	}
+	
+   .section-one, .section-two, .section-three {
+	   width: 33%;
+	   align-self: stretch;
+	}
+	.section-three {margin-left: 0.625em;}
+}
+@media all and (min-width:1200px) {
+	/* Desktop styles here */
+	
+	body {
+		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+		display: flex;
+		
+		font-size: 1em;
+	  }
+	  
+	.container {
+		  max-width: 1200px;
+		  width: 90%;
+		  display: flex;
+		  
+		  flex-flow: row wrap;
+	  }
+	  
+	header {
+		display: flex;
+		flex-flow: row wrap;
+	  }
+	  
+	header h1 {
+		width: 100%; 
+		margin-top: 0.876em;
+	}
+	
+	header nav {
+		margin-top: 0.876em;
+		margin-left: 36em;
+		margin-bottom: 1.6em;
+	}
+	
+	header nav ul {
+		  display: flex;
+		  justify-content: right;
+		  flex-direction: row;
+
+	}
+	  
+	header ul li {
+		  list-style: none;
+	}
+	header ul li a {
+		  text-decoration: none;
+		  color: #77a466;
+		  text-transform: uppercase;
+		  line-height: 1.6em;
+		  padding-right: 1.2em;
+		  font-weight: 700;
+		  font-style: normal;
+	  }
+	  header h1 {
+		  font-size: 2em;
+		  text-transform: uppercase;
+		
+		
+		  padding: 0;
+	  }
+	  header h1 span {
+		  color: #77a466;
+	  } 
+	  
+	  
+	  .hr {border-bottom: none;}
+	  
+	  header img {
+		  display: flex;
+		  width: 100%;
+		  border-top: 3px solid #77a466;
+		  border-bottom: 3px solid #77a466;
+	  }
+	  
+}
